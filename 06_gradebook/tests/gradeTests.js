@@ -20,3 +20,53 @@ exports["Can average grades"] = function (test) {
   test.equal(average, 75);
   test.done();
 };
+
+exports["Can compute letter grade of A"] = function (test) {
+  book.addGrade(100);
+  book.addGrade(90);
+
+  var result = book.getLetterGrade();
+
+  test.equal(result, 'A');
+  test.done();
+};
+
+exports["Can compute letter grade of B"] = function (test) {
+  book.addGrade(80);
+  book.addGrade(90);
+
+  var result = book.getLetterGrade();
+
+  test.equal(result, 'B');
+  test.done();
+};
+
+exports["Can compute letter grade of C"] = function (test) {
+  book.addGrade(70);
+  book.addGrade(79);
+
+  var result = book.getLetterGrade();
+
+  test.equal(result, 'C');
+  test.done();
+};
+
+exports["Can compute letter grade of D"] = function (test) {
+  book.addGrade(40);
+  book.addGrade(80);
+
+  var result = book.getLetterGrade();
+
+  test.equal(result, 'D');
+  test.done();
+};
+
+exports["Can compute letter grade of F"] = function (test) {
+  book.addGrade(0);
+  book.addGrade(100);
+
+  var result = book.getLetterGrade();
+
+  test.equal(result, 'F');
+  test.done();
+};
