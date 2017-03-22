@@ -38,7 +38,45 @@ var roll = getDieRoll(6);
 // console.log("You rolled a " + roll);
 
 // Branch and console.log else if
-if (roll >= 1 && roll <= 5) {
+// if (roll >= 1 && roll <= 5) {
+//   console.log("Great Roll!");
+// } else if(roll == 1) {
+//   console.log("Terrible roll");
+// } else {
+//   console.log("That was an ok roll");
+// };
+
+// console.log("You rolled a " + roll);
+
+
+// While Loop
+// while(roll < 4){
+//   roll = getDieRoll(6);
+// }
+
+// if (roll >= 5) {
+//   console.log("Great Roll!");
+// } else if(roll == 1) {
+//   console.log("Terrible roll");
+// } else {
+//   console.log("That was an ok roll");
+// };
+
+// console.log("You rolled a " + roll);
+
+// While Loop - Executres 0 or more times
+// while(roll < 4) {
+//   console.log(roll);
+//   roll = getDieRoll(6);
+// }
+
+// Do While Loop always executes at least once
+do {
+  roll = getDieRoll(6);
+  console.log(roll);
+} while (roll < 4)
+
+if (roll >= 5) {
   console.log("Great Roll!");
 } else if (roll == 1) {
   console.log("Terrible roll");
