@@ -24,7 +24,7 @@ averageCost // 3.7475
 message = 'Your lunch of ' + lunch + ' for ' + sizeOfParty + ' people will cost you ' + averageCost
 
 message
-// message = 'Your lunch of ' + lunch + ' for ' + sizeOfParty + ' people will cost you ' + averageCosts
+// message = 'Your lunch of 12 inch pizza for 4 people will cost you 3.7475'
 
 
 
@@ -55,4 +55,18 @@ console.log(averageCost); // 3.7475
 var message = 'Your lunch of ' + lunch + ' for ' + sizeOfParty + ' people will cost you ' + averageCost;
 
 console.log(message);
-// message = 'Your lunch of ' + lunch + ' for ' + sizeOfParty + ' people will cost you ' + averageCosts
+// message = 'Your lunch of 12 inch pizza for 4 people will cost you 3.7475'
+
+
+
+//--- Bill Calculator Refactor ---//
+var totalCost = 14.99;
+
+// Get arguments passed into it when run
+var sizeOfParty = process.argv[2];
+
+// Calculate average cost
+var averageCost = totalCost / sizeOfParty;
+
+// Console Log Average Cost
+console.log("$" + averageCost);
