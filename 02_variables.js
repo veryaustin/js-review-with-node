@@ -28,49 +28,60 @@
 
 //--- Types ---//
 
-var x = 3,
-  y = 2.5;
-var type = typeof 5;
-var z = '3';
-var result = x > y;
+// var x = 3,
+//     y = 2.5;
+// var type = typeof 5;
+// var z = '3';
+// var result = x > y;
 
-console.log(typeof y);
+// console.log(typeof y);
 // number
-console.log(type);
+// console.log(type);
 // number
-console.log(z);
+// console.log(z);
 // string
-console.log(result);
+// console.log(result);
 // True
-console.log(typeof result);
+// console.log(typeof result);
 // boolean
-console.log(typeof console);
+// console.log(typeof console);
 // object
 
-var answer = x + y;
-console.log(answer);
+// var answer = x + y;
+// console.log(answer);
 // 5.5
-console.log(typeof answer);
+// console.log(typeof answer);
 // number
 
-var answer = x + z;
-console.log(answer);
+// var answer = x + z;
+// console.log(answer);
 // '33'
-console.log(typeof answer);
+// console.log(typeof answer);
 // string
 
-var answer = x * y;
-console.log(answer);
+// var answer = x * y;
+// console.log(answer);
 // 7.5
-console.log(typeof answer);
+// console.log(typeof answer);
 // number
 
-var answer = z * y;
-console.log(answer);
+// var answer = z * y;
+// console.log(answer);
 // 7.5
-console.log(typeof answer);
+// console.log(typeof answer);
 // number
 
 // parseInt tries to find a numerical value in a string and returns a number
-answer = parseInt(z) + y;
+// answer = parseInt(z) + y;
 // 5.5
+
+
+
+// --- Functions Intro --- //
+
+var writeGreeting = function (name) {
+  var message = "Hello, " + name;
+  console.log(message);
+}
+
+writeGreeting("Austin");
