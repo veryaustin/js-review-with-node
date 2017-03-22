@@ -35,6 +35,7 @@ var roll = getDieRoll(6);
 //   console.log("That was an ok roll");
 // };
 
+// console.log("You rolled a " + roll);
 
 // Branch and console.log else if
 if (roll >= 1 && roll <= 5) {
@@ -46,3 +47,4 @@ if (roll >= 1 && roll <= 5) {
 };
 
 console.log("You rolled a " + roll);
+
