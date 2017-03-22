@@ -92,18 +92,33 @@ var roll = getDieRoll(6);
 
 
 // For Loops
-for (var i = 0; i < 10; i++) {
-  console.log(roll);
-  roll = getDieRoll(6);
+// for(var i = 0; i < 10; i++){
+//   console.log(roll);
+//   roll = getDieRoll(6);
+// };
+
+// if (roll >= 5) {
+//   console.log("Great Roll!");
+// } else if(roll == 1) {
+//   console.log("Terrible roll");
+// } else {
+//   console.log("That was an ok roll");
+// };
+
+// console.log("You rolled a " + roll);
+
+
+
+// Arrays
+var things = [1, 2, 3, "pizza"];
+console.log(things[3]);
+for (var i = 0; i < things.length; i++) {
+  console.log(things[i]);
 };
 
-if (roll >= 5) {
-  console.log("Great Roll!");
-} else if (roll == 1) {
-  console.log("Terrible roll");
-} else {
-  console.log("That was an ok roll");
-};
+// Process Argv Array
+// for(var i = 0; i < process.argv.length; i++){
+//   console.log(process.argv[i]);
+// };
 
-console.log("You rolled a " + roll);
 
